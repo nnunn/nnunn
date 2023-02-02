@@ -28,7 +28,6 @@ twitter_username: nnunny
 github_username:  nnunn
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
 
