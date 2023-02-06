@@ -1,0 +1,22 @@
+---
+layout: sub-pages
+title: Tarot
+---
+
+   <div class="container">
+
+   <div class="row">
+   	<div class="col-9">
+   	<p>The newest of my passions. When I was divorcing my first husband I went to a party / talent show at a small bar on the edge of downtown. It was in a rambshackled old building and was full of people who I kind of knew, but wasn't close to. I was shy, but determined to have a good time because I'd found childcare and escaped, for a few hours, the overwhelming complexity and sadness of my life at that time. There was a Tarot reader there, an effeminate man with a strong voice. My reading made him uncomfortable. It was all swords. Ten of swords. I still remember, twelve years later, how vividly the image represented my life.</p>
+   </div>
+   <div class="col-3">
+    <h2>Tarot Posts</h2>
+   	<ul class="list-group">
+  {% for post in site.categories.tarot %}
+    <li class="list-group-item">
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+   </div>
+ </div>
