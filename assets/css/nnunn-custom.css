@@ -3,7 +3,8 @@ body{
 	font-size: 1.3em;
 }
 a{
-	text-decoration: none;
+	text-decoration: underline;
+	color:#960251;
 }
 h2{
 	font-size: 1.2em;
@@ -18,42 +19,46 @@ h2{
 }
 .nn-navbar-brand a{
 	color:#222;
+	text-decoration: none;
 }
-.nn-navbar-brand a:hover{
-	color:#555;
+.nn-navbar-brand a:hover, .nn-navbar-brand span.red-text:hover{
+	color:#000;
 }
 .nn-about{
 	background-color:#960251;
 	border-radius: 30px;
 	color: #fff;
+	text-decoration: none;
 }
 .nn-about:hover{
 	background-color:#660036;
 }
-.nn-byline a, .more{
+.nn-byline a, .nn-title{
 	color:#000;
 	font-weight: bold;
-	padding: 3px;
-	border-radius: 4px;
+	padding: 0 5px 3px 5px;
+	border-radius: 10px;
+	transition: all .9s;
+	text-decoration: none;
 } 
-.blue{
-	background-color:#DDE7F8;
+.blue-top-border{
+	border-top: solid 3px #A0BBEB;
 }
-.blue:hover, .dblue{
+.blue-top-border:hover, .dblue{
 	background-color:#A0BBEB;
 	}
 
-.green{
-	background-color:#E9F1E4;
+.green-top-border{
+	border-top: solid 3px #88C264;
 }
-.green:hover, .dgreen{
+.green-top-border:hover, .dgreen{
 	background-color:#88C264;
 	}
 
-.yellow{
-	background-color:#FCF6D9;
+.yellow-top-border{
+	border-top: solid 3px #F3D651;
 }
-.yellow:hover, .dyellow{
+.yellow-top-border:hover, .dyellow{
 	background-color:#F3D651;
 	}
 .red-text{
@@ -93,19 +98,6 @@ h2{
 .nn-img{
 	filter: contrast(200%) brightness(150%);
 	opacity: 80%;
-}
-.nn-title-gr, .nn-title-yl, .nn-title-bl{
-	color:#333;
-	font-weight: bold;
-}
-.nn-title-gr:hover{
-	border-top:solid #88C264 3px;
-}
-.nn-title-yl:hover{
-	border-top:solid #F3D651 3px;
-}
-.nn-title-bl:hover{
-	border-top:solid #A0BBEB 3px;
 }
 .nn-quotes{
 	font-family: 'Alex Brush', cursive;
