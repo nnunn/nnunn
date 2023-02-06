@@ -28,7 +28,7 @@ h2{
 	color: #fff;
 }
 .nn-about:hover{
-	background-color:#200011;
+	background-color:#660036;
 }
 .nn-byline a{
 	color:#000;
@@ -57,12 +57,14 @@ h2{
 .yellow:hover, .dyellow{
 	background-color:#F3D651;
 	}
+.red{
+	color:#960251;
+}
 .nn-byline-title{
 	font-family: 'Sassy Frass', cursive;
 	font-size:200px;
 	line-height: 180px;
 	color:#960251;
-
 }
 .nn-byline-title2{
 	font-family: 'Alex Brush', cursive;
@@ -74,7 +76,7 @@ h2{
 	font-size: 2em;
 }
 .icons a:hover{
-	color:#200011;
+	color:#660036;
 }
 .nn-h1{
 	font-weight:bold;
