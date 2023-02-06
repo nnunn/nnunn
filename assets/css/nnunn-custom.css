@@ -30,11 +30,10 @@ h2{
 .nn-about:hover{
 	background-color:#660036;
 }
-.nn-byline a{
+.nn-byline a, .more{
 	color:#000;
-	text-decoration: none;
 	font-weight: bold;
-	padding: 4px 3px;
+	padding: 3px;
 	border-radius: 4px;
 } 
 .blue{
@@ -57,8 +56,17 @@ h2{
 .yellow:hover, .dyellow{
 	background-color:#F3D651;
 	}
-.red{
+.red-text{
 	color:#960251;
+}
+.blue-text{
+	color:#A0BBEB;
+}
+.green-text{
+	color:#88C264;
+}
+.yellow-text{
+	color:#F3D651;
 }
 .nn-byline-title{
 	font-family: 'Sassy Frass', cursive;
@@ -101,6 +109,6 @@ h2{
 }
 .nn-quotes{
 	font-family: 'Alex Brush', cursive;
-	font-size:50px;
-	line-height: 50px;
+	font-size:55px;
+	line-height: 60px;
 }

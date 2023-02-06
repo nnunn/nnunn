@@ -3,5 +3,20 @@ layout: sub-pages
 title: Writing
 ---
 
-  
-   	<p>I have wanted to write since I can young. When the beauty of words swept me up - poetry, beautiful novels, quotes that seemed to make the whole of my confusing human existance make sense for at least a minute. I wanted to join in on that. I would sit out in the feild behind my parents house and speak words. Our two black dogs - William and Dusty - would watch me as I let words flow out of my mouth savouring them like fruit.</p>
+   <div class="container">
+
+   <div class="row">
+   	<div class="col-9">
+   	<p>When I first learned to read the beauty of words swept me up - poetry, novels, quotes that seemed to make the whole of my confusing human existance make sense for at least a minute. I wanted to join in on that. I would sit out in the feild behind my parents house and speak words. Our two black dogs - William and Dusty - would watch me as I let words flow out of my mouth savouring them like fruit.</p>
+   </div>
+   <div class="col-3">
+    <h2>Writing Posts</h2>
+   	<ul class="list-group">
+  {% for post in site.categories.writing %}
+    <li class="list-group-item">
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+   </div>
+ </div>
