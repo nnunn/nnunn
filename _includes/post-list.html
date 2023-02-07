@@ -1,0 +1,11 @@
+<div class="col-4">
+   <h2>{{ page.title }} Posts</h2>
+   <ul class="list-group">
+      {% assign pt = page.title | downcase %}
+      {% for post in site.categories[pt] %}
+         <a href="{{ post.url }}" class="list-group-item list-group-item-action red-text fw-bold">{{ post.title }}
+            <span class="fst-italic small d-block text-dark fw-normal">{{ post.date | date: "%-d %B %Y" }}</span>
+         </a>
+      {% endfor %}
+   </ul>
+</div>

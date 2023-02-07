@@ -3,8 +3,13 @@ body{
 	font-size: 1.3em;
 }
 a{
-	text-decoration: underline;
+	text-decoration: none;
+	border-bottom:1px solid #960251;
 	color:#960251;
+	font-weight: bold;
+}
+a:hover{
+	border-bottom: none;
 }
 h2{
 	font-size: 1.2em;
@@ -19,7 +24,7 @@ h2{
 }
 .nn-navbar-brand a{
 	color:#222;
-	text-decoration: none;
+	border-bottom: none;
 }
 .nn-navbar-brand a:hover, .nn-navbar-brand span.red-text:hover{
 	color:#000;
@@ -28,35 +33,42 @@ h2{
 	background-color:#960251;
 	border-radius: 30px;
 	color: #fff;
-	text-decoration: none;
+	border-bottom: none;
 }
 .nn-about:hover{
 	background-color:#660036;
 }
-.nn-byline a, .nn-title{
+.nn-byline a, .nn-title, .nn-h1{
 	color:#000;
 	font-weight: bold;
 	padding: 0 5px 3px 5px;
-	border-radius: 10px;
-	transition: all .9s;
-	text-decoration: none;
+	border-radius: 10px 0px 10px 0px;
+	transition: all 1s;
 } 
+.nn-h1, .nn-title{
+	padding:0 8px;
+}
+.nn-h1{
+	font-size: 1.5em;
+}
 .blue-top-border{
-	border-top: solid 3px #A0BBEB;
+	border: 1px solid #A0BBEB;
+	border-width: 3px 0 0 1px;
 }
 .blue-top-border:hover, .dblue{
 	background-color:#A0BBEB;
-	}
-
+}
 .green-top-border{
-	border-top: solid 3px #88C264;
+	border: 1px solid #88C264;
+	border-width: 3px 0 0 1px;
 }
 .green-top-border:hover, .dgreen{
 	background-color:#88C264;
 	}
 
 .yellow-top-border{
-	border-top: solid 3px #F3D651;
+	border: 1px solid #F3D651;
+	border-width: 3px 0 0 1px;
 }
 .yellow-top-border:hover, .dyellow{
 	background-color:#F3D651;
@@ -80,27 +92,40 @@ h2{
 	color:#960251;
 }
 .nn-byline-title2{
-	font-family: 'Alex Brush', cursive;
-	font-size:60px;
+	font-family: 'La Belle Aurore', cursive;
+	font-size:50px;
 	margin-left:-10px;
 	}
 .icons a{
 	color:#960251;
 	font-size: 2em;
+	border-bottom: none;
 }
 .icons a:hover{
 	color:#660036;
-}
-.nn-h1{
-	font-weight:bold;
-	font-size:30px;
 }
 .nn-img{
 	filter: contrast(200%) brightness(150%);
 	opacity: 80%;
 }
 .nn-quotes{
-	font-family: 'Alex Brush', cursive;
-	font-size:55px;
+	font-family: 'La Belle Aurore', cursive;
+	font-size:50px;
 	line-height: 60px;
 }
+.carousel-item{
+	height: 340px;
+}
+.nn-date{
+	font-size: 0.7em;
+	font-family: Arial, sans-serif;
+	margin: 5px 0 5px 0px;
+	color:#666;
+}
+.lt-blue{
+	background-color: #EEF3FB;
+}
+.lt-green{
+	background-color: #EEF3FB;
+}
+
