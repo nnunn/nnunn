@@ -11,9 +11,6 @@ a{
 a:hover{
 	border-bottom: none;
 }
-h2{
-	font-size: 1.2em;
-}
 .nn-navbar{
 	box-shadow: 0px 1px 9px grey;
 	margin-bottom: 20px;
@@ -38,7 +35,7 @@ h2{
 .nn-about:hover{
 	background-color:#660036;
 }
-.nn-byline a, .nn-title, .nn-h1{
+.nn-byline a, .nn-title, .nn-h1, .nn-h2{
 	color:#000;
 	font-weight: bold;
 	padding: 0 5px 3px 5px;
@@ -48,8 +45,14 @@ h2{
 .nn-h1, .nn-title{
 	padding:0 8px;
 }
+.nn-title{
+	font-size: 0.8em;
+}
 .nn-h1{
 	font-size: 1.5em;
+}
+.nn-h2{
+	font-size: 1.1em;
 }
 .blue-top-border{
 	border: 1px solid #A0BBEB;
@@ -73,6 +76,13 @@ h2{
 .yellow-top-border:hover, .dyellow{
 	background-color:#F3D651;
 	}
+.red-top-border{
+	border: 1px solid #960251;
+	border-width: 3px 0 0 1px;
+}
+.red-top-border:hover, .red-bg{
+	background-color:#960251;
+}
 .red-text{
 	color:#960251;
 }
@@ -108,10 +118,14 @@ h2{
 	filter: contrast(200%) brightness(150%);
 	opacity: 80%;
 }
-.nn-quotes{
+.nn-quotes, .nn-quotes-sm{
 	font-family: 'La Belle Aurore', cursive;
 	font-size:50px;
 	line-height: 60px;
+}
+.nn-quotes-sm{
+	font-size:35px;
+	line-height: 47px;
 }
 .carousel-item{
 	height: 340px;
@@ -126,6 +140,8 @@ h2{
 	background-color: #EEF3FB;
 }
 .lt-green{
-	background-color: #EEF3FB;
+	background-color: #E8F4E2;
 }
-
+.lt-yellow{
+	background-color: #FCF6D9;
+}
