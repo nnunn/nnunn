@@ -5,11 +5,12 @@ body{
 a{
 	text-decoration: none;
 	border-bottom:1px solid #960251;
-	color:#960251;
+	color:#666;
 	font-weight: bold;
 }
 a:hover{
 	border-bottom: none;
+	color:#000;
 }
 .nn-navbar{
 	box-shadow: 0px 1px 9px grey;
@@ -34,6 +35,7 @@ a:hover{
 }
 .nn-about:hover{
 	background-color:#660036;
+	color: #fff;
 }
 .nn-byline a, .nn-title, .nn-h1, .nn-h2{
 	color:#000;
@@ -82,6 +84,7 @@ a:hover{
 }
 .red-top-border:hover, .red-bg{
 	background-color:#960251;
+	color: #fff;
 }
 .red-text{
 	color:#960251;
