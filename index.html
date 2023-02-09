@@ -11,8 +11,8 @@ title: Amusings
  
   <h2 class="mb-0"><a href="{{ post.url }}" class="nn-title blue-top-border">{{ post.title }}</a></h2>
   <p class="nn-date border-bottom border-muted pb-1 mb-2 ms-2">{{ post.date | date: "%B %-d,  %Y" }}</p>
-{{ post.excerpt }}  
- {% endfor %}
+    {{ post.excerpt }}
+ {% endfor % }
    <img src="/assets/images/habit.jpg" class="w-575rounded py-2" alt="promix soil tower"/>
 
 </div>
@@ -23,14 +23,13 @@ title: Amusings
   <img src="/assets/images/promix.png" class="nn-img rounded p-2 img-fluid" alt="promix soil tower"/>
 </div>
   </div>
- <div class="px-4 py-3">
+ <div class="px-3 py-2">
    {% for post in site.categories.gardening limit:1 %}
  
   <h2 class="mb-0"><a href="{{ post.url }}" class="nn-title green-top-border">{{ post.title }}</a></h2>
   <p class="nn-date border-bottom border-muted pb-1 mb-2 ms-2">{{ post.date | date: "%B %-d,  %Y" }}</p>
-{{ post.excerpt }}  
+ {{ post.excerpt }} 
  {% endfor %}
- 
 
 </div>
 </div>
@@ -41,9 +40,9 @@ title: Amusings
  
   <h2 class="mb-0"><a href="{{ post.url }}" class="nn-title yellow-top-border">{{ post.title }}</a></h2>
   <p class="nn-date border-bottom border-muted pb-1 mb-2 ms-2">{{ post.date | date: "%B %-d,  %Y" }}</p>
-{{ post.excerpt }}  
+ {{ post.excerpt }}  
  {% endfor %}
- <img src="/assets/images/star.jpg" class="p-2 rounded dblue mt-2 img-fluid" />
+ <img src="/assets/images/star.jpg" class="p-2 rounded dblue mt-2 img-fluid w-75 d-block mx-auto" />
 </div>
 </div>
 </div>
