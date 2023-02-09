@@ -11,8 +11,8 @@ title: Amusings
  
   <h2 class="mb-0"><a href="{{ post.url }}" class="nn-title blue-top-border">{{ post.title }}</a></h2>
   <p class="nn-date border-bottom border-muted pb-1 mb-2 ms-2">{{ post.date | date: "%B %-d,  %Y" }}</p>
-    {{ post.excerpt }}
- {% endfor % }
+    <p class="ps-2">{{ post.excerpt }}<a href="{{ post.url }}" class="lt-blue nn-read">read more</a></p> 
+ {% endfor %}
    <img src="/assets/images/habit.jpg" class="w-575rounded py-2" alt="promix soil tower"/>
 
 </div>
@@ -28,7 +28,7 @@ title: Amusings
  
   <h2 class="mb-0"><a href="{{ post.url }}" class="nn-title green-top-border">{{ post.title }}</a></h2>
   <p class="nn-date border-bottom border-muted pb-1 mb-2 ms-2">{{ post.date | date: "%B %-d,  %Y" }}</p>
- {{ post.excerpt }} 
+ <p class="ps-2">{{ post.excerpt }} <a href="{{ post.url }}" class="lt-green nn-read">read more</a> </p>
  {% endfor %}
 
 </div>
@@ -40,9 +40,11 @@ title: Amusings
  
   <h2 class="mb-0"><a href="{{ post.url }}" class="nn-title yellow-top-border">{{ post.title }}</a></h2>
   <p class="nn-date border-bottom border-muted pb-1 mb-2 ms-2">{{ post.date | date: "%B %-d,  %Y" }}</p>
- {{ post.excerpt }}  
+ <p class="ps-2">{{ post.excerpt }} <a href="{{ post.url }}" class="nn-read lt-yellow">read more</a></p>
  {% endfor %}
- <img src="/assets/images/star.jpg" class="p-2 rounded dblue mt-2 img-fluid w-75 d-block mx-auto" />
+ <div class="dblue p-2 mt-4 rounded">
+ <img src="/assets/images/star.jpg" class="rounded img-fluid" />
+</div>
 </div>
 </div>
 </div>

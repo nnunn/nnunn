@@ -148,3 +148,18 @@ a:hover{
 .lt-yellow{
 	background-color: #FCF6D9;
 }
+.nn-read{
+	padding: 2px 5px;
+	border-radius: 5px;
+	color: #000;
+	border:none;
+	font-size: 0.85em;
+	border: #fff solid 1px;
+	border-width: 1px 0;
+}
+.nn-read:hover{
+	opacity: .7;
+	border: #D3D3D3 solid 1px;
+	border-width: 1px 0;
+}
+
