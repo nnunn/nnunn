@@ -13,7 +13,9 @@ title: Amusings
   <p class="nn-date border-bottom border-muted pb-1 mb-2 ms-2">{{ post.date | date: "%B %-d,  %Y" }}</p>
     <p class="ps-2">{{ post.excerpt }}<a href="{{ post.url }}" class="lt-blue nn-read">read more</a></p> 
  {% endfor %}
-   <img src="/assets/images/habit.jpg" class="w-575rounded py-2" alt="promix soil tower"/>
+ <div class="dblue rounded p-2">
+   <img src="/assets/images/lake.gif" class="rounded" alt="the lake" width="100%" />
+ </div>
 
 </div>
 <div class="col-lg-6 border-end border-start border-secondary-subtle px-5">
@@ -38,12 +40,12 @@ title: Amusings
   
     {% for post in site.categories.tarot limit:1 %}
  
-  <h2 class="mb-0"><a href="{{ post.url }}" class="nn-title yellow-top-border">{{ post.title }}</a></h2>
+  <h2 class="mb-0"><a href="{{ post.url }}" class="nn-title yellow-top-border d-block">{{ post.title }}</a></h2>
   <p class="nn-date border-bottom border-muted pb-1 mb-2 ms-2">{{ post.date | date: "%B %-d,  %Y" }}</p>
  <p class="ps-2">{{ post.excerpt }} <a href="{{ post.url }}" class="nn-read lt-yellow">read more</a></p>
  {% endfor %}
- <div class="dblue p-2 mt-4 rounded">
- <img src="/assets/images/star.jpg" class="rounded img-fluid" />
+ <div class="dyellow p-2 mt-2 rounded ms-2 me-5 col-7">
+ <img src="/assets/images/ten-of-swords.png" class="rounded img-fluid" />
 </div>
 </div>
 </div>
