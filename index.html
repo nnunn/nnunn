@@ -15,19 +15,20 @@ description: Amusings on Writing, Gardening, and Tarot.
     <p class="ps-2">{{ post.excerpt }}<a href="{{ post.url }}" class="lt-blue nn-read">read more</a></p> 
  {% endfor %}
  <div class="dblue rounded p-2">
-   <img src="/assets/images/lake.gif" class="rounded" alt="the lake" width="100%" />
+  <a href="{{ post.url }}"> <img src="/assets/images/lake.gif" class="rounded" alt="a frozen lake in the Rocky Mountains" width="100%" /></a>
  </div>
 
 </div>
 <div class="col-lg-6 border-end border-start border-secondary-subtle pe-5 px-lg-5 mt-4 mt-lg-0">
   <div class="row">
   <div class="col-12">
+     {% for post in site.categories.gardening limit:1 %}
   <div class="dgreen rounded text-center mb-3 p-2">
-  <img src="/assets/images/seeds.png" class="img-fluid rounded" alt="Vegetable seed packets - radishes,broccoli, carrots, cauliflower, squash, and more"/>
+  <a href="{{ post.url }}"><img src="/assets/images/seeds.png" class="img-fluid rounded" alt="Vegetable seed packets - radishes,broccoli, carrots, cauliflower, squash, and more"/></a>
 </div>
   </div>
  <div class="px-3 py-2">
-   {% for post in site.categories.gardening limit:1 %}
+  
  
   <h2 class="mb-0"><a href="{{ post.url }}" class="nn-title green-top-border">{{ post.title }}</a></h2>
   <p class="nn-date border-bottom border-muted pb-1 mb-2 ms-2">{{ post.date | date: "%B %-d,  %Y" }}</p>
@@ -44,9 +45,10 @@ description: Amusings on Writing, Gardening, and Tarot.
   <h2 class="mb-0"><a href="{{ post.url }}" class="nn-title yellow-top-border d-block">{{ post.title }}</a></h2>
   <p class="nn-date border-bottom border-muted pb-1 mb-2 ms-2">{{ post.date | date: "%B %-d,  %Y" }}</p>
  <p class="ps-2">{{ post.excerpt }} <a href="{{ post.url }}" class="nn-read lt-yellow">read more</a></p>
- {% endfor %}
+ 
  <div class="dyellow p-2 mt-2 rounded ms-2 me-5 col-7">
- <img src="/assets/images/devil.png" class="rounded img-fluid" />
+ <a href="{{ post.url }}"><img src="/assets/images/devil.png" class="rounded img-fluid" /></a>
+ {% endfor %}
 </div>
 </div>
 </div>
