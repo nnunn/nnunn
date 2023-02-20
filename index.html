@@ -10,7 +10,7 @@ description: Amusings on Writing, Gardening, and Tarot.
    
       {% for post in site.categories.writing limit:1 %}
  
-  <h2 class="mb-0"><a href="{{ post.url }}" class="nn-title blue-top-border">{{ post.title }}</a></h2>
+  <h2 class="mb-0"><a href="{{ post.url }}" class="nn-title blue-top-border d-block">{{ post.title }}</a></h2>
   <p class="nn-date border-bottom border-muted pb-1 mb-2 ms-2">{{ post.date | date: "%B %-d,  %Y" }}</p>
     <p class="ps-2">{{ post.excerpt }}<a href="{{ post.url }}" class="lt-blue nn-read">read more</a></p> 
  {% endfor %}
