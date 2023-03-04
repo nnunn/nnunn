@@ -6,10 +6,22 @@ layout: default
 	<div class="row">
 		<div class="col-md-8 offset-md-2">
 			<h1 class="nn-h1 {{ page.colour }}-top-border d-inline-block mb-4">{{ page.title }}</h1>
+			{% if page.rating != nil %}
+	<p class="mt-n2 text-center">			
+{% for i in (1..page.rating) %}
+   <i class="fa-solid fa-moon h2 red-text"></i>
+{% endfor %}
+			 {% assign nf = 10 | minus: page.rating %}
+			 {% for i in (1..nf) %}
+   <i class="fa-regular fa-moon h2 red-text"></i>
+{% endfor %}	
+				{% endif %}
+<span class="small my-0 nn-date">{{ page.rating }} moons out of 10</span></p>
 		</div>
 		<div class="col-md-6 offset-md-3">
 			<div class="border border-muted p-4 mb-4 lt-{{ page.colour }}">
 				<p class="small ms-3 my-0 nn-date">{{ page.date  | date: "%B %-d,  %Y" }} filed in <a href="/{{ page.catagory | downcase }}">{{ page.catagory }}</a></p>
+				
 			</div>
 			{{ content }}
 		</div>
