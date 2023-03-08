@@ -180,3 +180,9 @@ a:hover{
 .mt-n2{
 	margin-top: -10px;
 }
+.transparent-link{
+	opacity: 0.6;
+}
+.transparent-link:hover{
+	opacity: 1;
+}
