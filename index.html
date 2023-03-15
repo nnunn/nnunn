@@ -67,8 +67,9 @@ description: Amusings on Writing, Gardening, and Tarot
      <ul class="list-group mb-4">
     {% for post in site.categories[category_name] %}
 
-     <a href="{{ post.url }}" class="list-group-item list-group-item-action red-text fw-bold">{{ post.title }}<br/>
-            <span class="nn-date fw-normal">{{ post.date | date: "%B %-d,  %Y" }}</span></a>
+  
+     <a href="{{ post.url }}" class="list-group-item list-group-item-action red-text fw-bold">  <div class="row"> <div class="col-4"><img src="{{ post.image }}" class="img-fluid"/></div> <div class="col-8">{{ post.title }}<br/>
+            <span class="nn-date fw-normal">{{ post.date | date: "%B %-d,  %Y" }}</span></div></div></a>
 
     {% endfor %}
 </ul>
