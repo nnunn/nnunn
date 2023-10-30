@@ -1,58 +1,30 @@
 ---
 layout: default
-title: Amusings
-cleantitle: Amusings by N. Nunn
-description: Amusings on Writing, Gardening, and Tarot
+title: nnunn
+cleantitle: nnunn
+description: Thoughts about stuff
 ---
 
 <div class="container">
   <div class="row">
-<div class="col-lg-3 pe-5">
+
    
-      {% for post in site.categories.writing limit:1 %}
- 
-  <h2 class="mb-0"><a href="{{ post.url }}" class="nn-title blue-top-border d-block">{{ post.title }}</a></h2>
-  <p class="nn-date border-bottom border-muted pb-1 mb-2 ms-2">{{ post.date | date: "%B %-d,  %Y" }}</p>
-    <p class="ps-2">{{ post.excerpt }}<a href="{{ post.url }}" class="lt-blue nn-read">read more</a></p> 
- 
- <div class="dblue rounded p-2">
-  <a href="{{ post.url }}"> <img src="/assets/images/maggies-hill.png" class="rounded" alt="Maggie's Hill Log Cabin" width="100%" /></a>
-  {% endfor %}
- </div>
+      {% for post in site.posts limit:1 %}
 
-</div>
-<div class="col-lg-6 border-end border-start border-secondary-subtle pe-5 px-lg-5 mt-4 mt-lg-0">
-  <div class="row">
-  <div class="col-12">
-     {% for post in site.categories.gardening limit:1 %}
-  <div class="dgreen rounded text-center mb-3 p-2">
-  <a href="{{ post.url }}"><img src="/assets/images/brass.png" class="img-fluid rounded" alt="Beautiful orange flower from last year."/></a>
-</div>
+<div class="col-lg-5">
+ 
+  <h2 class="mb-0">{{ post.title }}</h2>
+  <p class="small fst-italic">{{ post.date | date: "%B %-d,  %Y" }}</p>
+    <p>{{ post.excerpt }}<a href="{{ post.url }}" class="lt-blue nn-read">read more</a></p> 
   </div>
- <div class="px-3 py-2">
-  
+  <div class="col-lg-7">
+      <a href="{{ post.url }}"> <img src="{{ post.image }}" class="rounded img-fluid border border-dark" alt="{{ post.title }}" width="100%" /></a>
+  </div>
  
-  <h2 class="mb-0"><a href="{{ post.url }}" class="nn-title green-top-border">{{ post.title }}</a></h2>
-  <p class="nn-date border-bottom border-muted pb-1 mb-2 ms-2">{{ post.date | date: "%B %-d,  %Y" }}</p>
- <p class="ps-2">{{ post.excerpt }} <a href="{{ post.url }}" class="lt-green nn-read">read more</a> </p>
- {% endfor %}
+ 
+{% endfor %}
+</div>
 
-</div>
-</div>
-</div>
-<div class="col-lg-3 ps-3 ps-lg-5 pe-5 pe-lg-0">
-  
-    {% for post in site.categories.tarot limit:1 %}
- 
-  <h2 class="mb-0"><a href="{{ post.url }}" class="nn-title yellow-top-border d-block">{{ post.title }}</a></h2>
-  <p class="nn-date border-bottom border-muted pb-1 mb-2 ms-2">{{ post.date | date: "%B %-d,  %Y" }}</p>
- <p class="ps-2">{{ post.excerpt }} <a href="{{ post.url }}" class="nn-read lt-yellow">read more</a></p>
- 
- <div class="dyellow p-2 mt-2 rounded ms-2 me-5 col-12">
- <a href="{{ post.url }}"><img src="/assets/images/solar.gif" class="rounded img-fluid" alt="A gif of an yellow sun -- Solar Chakra -- and four taro cards being placed -- Reversed Lovers, Reversed Knight of Wands, Four of Pentacles, The Empress" /></a>
- {% endfor %}
-</div>
-</div>
 </div>
 </div>
 <div class="container-fluid border-top border-secondary-subtle bg-light mt-3 pt-4 d-none d-lg-block">
