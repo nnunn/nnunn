@@ -32,13 +32,13 @@ description: Thoughts about stuff
  
      <div class="row">
      
- {% for category in site.categories %}
+
  <div class="col-md-4">
-    {% capture category_name %}{{ category | first }}{% endcapture %}
+    
   
-    <h3 class="category-head">{{ category_name | capitalize }} Posts</h3>
+    <h3 class="category-head">Posts</h3>
      <ul class="list-group mb-4">
-    {% for post in site.categories[category_name] offset:1 %}
+    {% for post in site offset:1 %}
 
   
      <a href="{{ post.url }}" class="list-group-item list-group-item-action red-text fw-bold">  <div class="row"> <div class="col-4 thumbs"><img src="{{ post.image }}" class="img-fluid"/></div> <div class="col-8">{{ post.title }}<br/>
@@ -47,7 +47,7 @@ description: Thoughts about stuff
     {% endfor %}
 </ul>
  </div>
-{% endfor %}
+
       
    </div>
 </div>
@@ -85,7 +85,7 @@ the stars make a circle<br/> and in the middle we dance.</p> <p class="small">~ 
 </div>
 <script>
   $('.carousel').carousel({
-  interval: 3000
+  interval: 5000
 })
   </script>
  
