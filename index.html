@@ -6,7 +6,7 @@ description: Thoughts about stuff
 ---
 
 <div class="container">
-  <div class="row">
+  <div class="row pb-4">
 
    
       {% for post in site.posts limit:1 %}
@@ -31,61 +31,79 @@ description: Thoughts about stuff
   <div class="container">
  
      <div class="row">
+     <div class="col-md-8">
+        <div class="row">
      
-
- <div class="col-md-4">
+           <h3 class="category-head mb-4">Catagories</h3>
+            <div class="col">
+              <div class="card"><a href="/gardening" class="text-center stretched-link nn-cat-gr py-3">Gardening</a></div></div>
+            <div class="col"><div class="card"><a href="/writing" class="text-center stretched-link nn-cat-bl py-3">Writing</a></li></div></div>
+            <div class="col"><div class="card"><a href="/tarot" class="text-center stretched-link nn-cat-yl py-3">Tarot</a></li></div></div>
+          </ul>
+        </div>
+        <div class="row mt-2 me-2">
+          <div id="carouselExample" class="carousel slide carousel-fade carousel-dark" data-ride="carousel">
+            
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                <p class="mb-1 nn-quotes">A man would know the end he goes to, but he cannot know it if he does not turn, and return to his beginning, and hold that beginning in his being. </p> <p class="small">~ Ursula Le Guin {<a href="/citations">citation</a>}</p>
+              </div>
+              <div class="carousel-item">
+                <p class="mb-1 nn-quotes">We come spinning out of nothingness<br/> scattering stars like dust<br/>
+the stars make a circle<br/> and in the middle we dance.</p> <p class="small">~ Rumi {<a href="/citations">citation</a>}</p>
+              </div>
+             
+              <div class="carousel-item">
+                <p class="mb-1 nn-quotes">There is no time for despair, no place for self-pity, no need for silence, no room for fear. <br/>We speak, we write, we do language. That is how civilizations heal.</p> 
+                <p class="small">~ Toni Morrison {<a href="/citations">citation</a>}</p>
+              </div>
+              <div class="carousel-item">
+                <p class="mb-1 nn-quotes">Around us swirls the dust of the cities,<br/>
+                  the garbage clings to us.<br/>
+                  And yet if our Earth needed to <br/>
+                  she could weave us together like roses.</p>
+                <p class="small">~ Rainer Maria Rilke {<a href="/citations">citation</a>}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+ <div class="col-md-3 offset-1">
     
   
-    <h3 class="category-head">Posts</h3>
-     <ul class="list-group mb-4">
-    {% for post in site offset:1 %}
+    <h3 class="category-head">Recent Posts</h3>
+     
+      {% for post in site.posts offset:1 limit:6 %}
 
   
-     <a href="{{ post.url }}" class="list-group-item list-group-item-action red-text fw-bold">  <div class="row"> <div class="col-4 thumbs"><img src="{{ post.image }}" class="img-fluid"/></div> <div class="col-8">{{ post.title }}<br/>
-            <span class="nn-date fw-normal">{{ post.date | date: "%B %-d,  %Y" }}</span></div></div></a>
+     <div class="card mb-2 nn-card-list"><div class="nn-post-list-img"><img src="{{ post.image }}" class="img-fluid"/></div><a href="{{ post.url }}" class="stretched-link px-2 small nn-post-link"> {{ post.title }}</a>
+           </div>
 
     {% endfor %}
-</ul>
+  
+  <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" class="d-block text-center small bg-white rounded mb-3">
+   All Posts 
+  </a>
+ 
+
+<div class="collapse" id="collapseExample">
+  {% for post in site.posts offset:7 %}
+     <div class="card mb-2 nn-card-list"><div class="nn-post-list-img"><img src="{{ post.image }}" class="img-fluid"/></div><a href="{{ post.url }}" class="stretched-link px-2 small nn-post-link"> {{ post.title }}</a>
+           </div>
+     {% endfor %}
+</div>
+     
+
  </div>
 
       
    </div>
 </div>
   </div>
-<div class="container-fluid border-top border-secondary-subtle bg-light mt-3 pt-4 d-none d-lg-block">
-  <div class="container pt-5 pb-4">
-    <div class="row">
-<div id="carouselExample" class="carousel slide carousel-fade carousel-dark" data-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active text-center">
-       <p class="mb-1 nn-quotes">We come spinning out of nothingness<br/> scattering stars like dust<br/>
-the stars make a circle<br/> and in the middle we dance.</p> <p class="small">~ Rumi {<a href="/citations">citation</a>}</p>
 
-
-    </div>
-    <div class="carousel-item text-center">
-       <p class="mb-1 nn-quotes">There is no time for despair, no place for self-pity, <br/>no need for silence, no room for fear. <br/>We speak, we write, we do language. That is how civilizations heal.
-
-</p> <p class="small">~ Toni Morrison {<a href="/citations">citation</a>}</p>
-
-    </div>
-    <div class="carousel-item text-center">
-      <p class="mb-1 nn-quotes">Around us swirls the dust of the cities,<br/>
-      the garbage clings to us.<br/>
-    And yet if our Earth needed to <br/>
-  she could weave us together like roses.</p>
-   <p class="small">~ Rainer Maria Rilke {<a href="/citations">citation</a>}</p>
-    </div>
-  </div>
-</div>
 <script>
   $('.carousel').carousel({
-  interval: 5000
+  interval: 6000
 })
   </script>
  
