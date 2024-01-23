@@ -27,21 +27,21 @@ description: Thoughts about stuff
 
 </div>
 </div>
-<div class="container-fluid border-top border-secondary-subtle bg-light mt-3 pt-4 d-none d-lg-block">
+<div class="container-fluid border-top border-secondary-subtle bg-light mt-3 pt-4">
   <div class="container">
  
      <div class="row">
      <div class="col-md-8">
         <div class="row">
      
-           <h3 class="category-head mb-4">Catagories</h3>
+           <h3 class="category-head">Catagories</h3>
             <div class="col">
               <div class="card"><a href="/gardening" class="text-center stretched-link nn-cat-gr py-3">Gardening</a></div></div>
             <div class="col"><div class="card"><a href="/writing" class="text-center stretched-link nn-cat-bl py-3">Writing</a></li></div></div>
             <div class="col"><div class="card"><a href="/tarot" class="text-center stretched-link nn-cat-yl py-3">Tarot</a></li></div></div>
           </ul>
         </div>
-        <div class="row mt-2 me-2">
+        <div class="row mt-4 me-2 d-none d-md-block">
           <div id="carouselExample" class="carousel slide carousel-fade carousel-dark" data-ride="carousel">
             
             <div class="carousel-inner">
@@ -76,14 +76,19 @@ the stars make a circle<br/> and in the middle we dance.</p> <p class="small">~ 
     
   
     <h3 class="category-head">Recent Posts</h3>
+    
      
-      {% for post in site.posts offset:1 limit:6 %}
+      {% for post in site.posts offset:1 limit:4 %}
 
-  
+ 
      <div class="card mb-2 nn-card-list"><div class="nn-post-list-img"><img src="{{ post.image }}" class="img-fluid"/></div><a href="{{ post.url }}" class="stretched-link px-2 small nn-post-link"> {{ post.title }}</a>
            </div>
+         
+
 
     {% endfor %}
+     </div>
+      </div>
   
   <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" class="d-block text-center small bg-white rounded mb-3">
    All Posts 
@@ -91,14 +96,18 @@ the stars make a circle<br/> and in the middle we dance.</p> <p class="small">~ 
  
 
 <div class="collapse" id="collapseExample">
-  {% for post in site.posts offset:7 %}
+  <div class="row">
+  {% for post in site.posts offset:5 %}
+   <div class="col-4">
      <div class="card mb-2 nn-card-list"><div class="nn-post-list-img"><img src="{{ post.image }}" class="img-fluid"/></div><a href="{{ post.url }}" class="stretched-link px-2 small nn-post-link"> {{ post.title }}</a>
            </div>
+         </div>
      {% endfor %}
+   </div>
 </div>
      
 
- </div>
+
 
       
    </div>
