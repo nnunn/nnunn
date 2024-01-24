@@ -18,7 +18,7 @@ description: Thoughts about stuff
     <p>{{ post.excerpt }}<a href="{{ post.url }}" class="lt-blue nn-read">read more</a></p> 
   </div>
   <div class="col-lg-7">
-      <a href="{{ post.url }}"> <img src="{{ post.image }}" class="rounded img-fluid border border-dark" alt="{{ post.title }}" width="100%" /></a>
+      <a href="{{ post.url }}"> <img src="{{ post.image }}" class="rounded img-fluid" alt="{{ post.title }}" width="100%" /></a>
   </div>
  
  
@@ -36,12 +36,12 @@ description: Thoughts about stuff
      
            <h3 class="category-head">Catagories</h3>
             <div class="col">
-              <div class="card"><a href="/gardening" class="text-center stretched-link nn-cat-gr py-3">Gardening</a></div></div>
-            <div class="col"><div class="card"><a href="/writing" class="text-center stretched-link nn-cat-bl py-3">Writing</a></li></div></div>
-            <div class="col"><div class="card"><a href="/tarot" class="text-center stretched-link nn-cat-yl py-3">Tarot</a></li></div></div>
+              <div class="card"><a href="/gardening" class="text-center stretched-link border border-muted py-3 rounded nn-cat-gr">Gardening</a></div></div>
+            <div class="col"><div class="card"><a href="/writing" class="text-center stretched-link nn-cat-bl py-3 border border-muted rounded">Writing</a></li></div></div>
+            <div class="col"><div class="card"><a href="/tarot" class="text-center stretched-link nn-cat-yl py-3 border border-muted rounded">Tarot</a></li></div></div>
           </ul>
         </div>
-        <div class="row mt-4 me-2 d-none d-md-block">
+        <div class="row my-4 me-2 d-none d-md-block">
           <div id="carouselExample" class="carousel slide carousel-fade carousel-dark" data-ride="carousel">
             
             <div class="carousel-inner">
@@ -78,7 +78,7 @@ the stars make a circle<br/> and in the middle we dance.</p> <p class="small">~ 
     <h3 class="category-head">Recent Posts</h3>
     
      
-      {% for post in site.posts offset:1 limit:4 %}
+      {% for post in site.posts offset:1 limit:3 %}
 
  
      <div class="card mb-2 nn-card-list"><div class="nn-post-list-img"><img src="{{ post.image }}" class="img-fluid"/></div><a href="{{ post.url }}" class="stretched-link px-2 small nn-post-link"> {{ post.title }}</a>
@@ -87,17 +87,18 @@ the stars make a circle<br/> and in the middle we dance.</p> <p class="small">~ 
 
 
     {% endfor %}
+    <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" class="d-block text-center small red-bg text-white rounded my-3">
+   View All Posts 
+  </a>
      </div>
       </div>
   
-  <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" class="d-block text-center small bg-white rounded mb-3">
-   All Posts 
-  </a>
+  
  
 
 <div class="collapse" id="collapseExample">
   <div class="row">
-  {% for post in site.posts offset:5 %}
+  {% for post in site.posts offset:4 %}
    <div class="col-3">
      <div class="card mb-2 nn-card-list"><div class="nn-post-list-img"><img src="{{ post.image }}" class="img-fluid"/></div><a href="{{ post.url }}" class="stretched-link px-2 small nn-post-link"> {{ post.title }}</a>
            </div>
