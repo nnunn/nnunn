@@ -36,13 +36,13 @@ h2{
 .nn-navbar-brand a:hover, .nn-navbar-brand span.red-text:hover{
 	color:#000;
 }
-.nn-about{
+.nn-about, .nn-cat{
 	background-color:#960251;
-	border-radius: 30px;
+	border-radius: 20px;
 	color: #fff;
 	border-bottom: none;
 }
-.nn-about:hover{
+.nn-about:hover, .nn-cat:hover{
 	background-color:#660036;
 	color: #fff;
 }
@@ -155,13 +155,13 @@ h2{
 	margin: 5px 0 5px 0px;
 	color:#666;
 }
-.lt-blue, .nn-cat-bl:hover{
+.lt-blue{
 	background-color: #EEF3FB;
 }
-.lt-green, .nn-cat-gr:hover{
+.lt-green{
 	background-color: #E8F4E2;
 }
-.lt-yellow, .nn-cat-yl:hover{
+.lt-yellow{
 	background-color: #FCF6D9;
 }
 .nn-read{
@@ -203,6 +203,5 @@ h2{
 }
 .carousel-item{
 	height: 21rem;
-	border:1px solid #960251;
-	border-width: 3px 0 0 0;
+
 }
