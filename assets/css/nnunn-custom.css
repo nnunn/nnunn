@@ -140,7 +140,7 @@ h2{
 .nn-card-list:hover{
 	opacity: 80%;
 }
-.nn-quotes, .nn-quotes-sm{
+.nn-quotes{
 	font-size:45px;
 	line-height: 60px;
 }
@@ -200,4 +200,9 @@ h2{
 }
 .thumbs img{
 	max-height: 100px;
+}
+.carousel-item{
+	height: 21rem;
+	border:1px solid #960251;
+	border-width: 3px 0 0 0;
 }
