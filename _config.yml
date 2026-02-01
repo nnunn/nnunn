@@ -1,4 +1,4 @@
-#title: nnunn
+title: nnunn
 email: natasha@nnunn.ca
 description: >-
   Writing. Gardening. Tarot. Yoga. 
@@ -13,10 +13,3 @@ plugins:
   - jekyll-feed
   
 include: ["archive"]
-
-# Keep posts in archive folder and generate URLs correctly
-defaults:
-  - scope:
-      path: "archive"
-    values:
-      permalink: /archive/:categories/:year/:month/:day/:title:output_ext
