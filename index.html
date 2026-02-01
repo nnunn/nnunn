@@ -1,136 +1,29 @@
----
-layout: default
-title: nnunn
-cleantitle: nnunn
-description: Thoughts about stuff
----
-
-<div class="container">
-  <div class="row pb-4">
-
-   
-      {% for post in site.posts limit:1 %}
-
-<div class="col-lg-5">
- 
-  <h2 class="mb-0">{{ post.title }}</h2>
-  <p class="small fst-italic">{{ post.date | date: "%B %-d,  %Y" }}</p>
-    <p>{{ post.excerpt }}<a href="{{ post.url }}" class="lt-blue nn-read">read more</a></p> 
-  </div>
-  <div class="col-lg-7">
-      <a href="{{ post.url }}"> <img src="{{ post.image }}" class="rounded img-fluid" alt="{{ post.title }}" width="100%" /></a>
-  </div>
- 
- 
-{% endfor %}
-</div>
-
-</div>
-</div>
-<div class="container-fluid border-top border-secondary-subtle bg-light mt-3 pt-4">
-  <div class="container">
- 
-     <div class="row">
-     <div class="col-md-8">
-        <div class="row">
-     
-           <h3 class="category-head">Catagories</h3>
-            <div class="col">
-              <div class="card"><a href="/gardening" class="text-center stretched-link py-3 rounded nn-cat">Gardening</a></div></div>
-            <div class="col"><div class="card"><a href="/writing" class="text-center stretched-link nn-cat py-3 rounded">Writing</a></li></div></div>
-            <div class="col"><div class="card"><a href="/tarot" class="text-center stretched-link nn-cat py-3 rounded">Tarot</a></li></div></div>
-          </ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natasha Nunn</title>
+  
+</head>
+<body>
+    <div class="container">
+        <h1>Natasha Nunn</h1>
+        <p class="tagline">Writer</p>
+        
+        <div class="bio">
+            <p>I</p>
         </div>
-        <div class="row my-4 d-none d-md-block">
-
-          <div id="carouselExample" class="carousel slide carousel-fade carousel-dark" data-ride="carousel">
-            
-            <div class="carousel-inner">
-              <div class="carousel-item active pt-4 mt-2">
-            
-                <p class="mb-1 nn-quotes"> Trust your intuitions, they are the whispers of God, the righteous and ushering force, moving us ever onward.</p> <p class="small mt-3">~ Nick Cave {<a href="/citations">citation</a>}</p>
-                
-              </div>
-            
-               <div class="carousel-item pt-4 mt-2">
-               
-                <p class="mb-1 nn-quotes">A man would know the end he goes to, but he cannot know it if he does not turn, and return to his beginning, and hold that beginning in his being. </p> <p class="small mt-3">~ Ursula Le Guin {<a href="/citations">citation</a>}</p>
-               
-              </div>
-
-              <div class="carousel-item pt-4 mt-2">
-               
-                <p class="mb-1 nn-quotes">We come spinning out of nothingness<br/> scattering stars like dust<br/>
-the stars make a circle<br/> and in the middle we dance.</p> <p class="small mt-3">~ Rumi {<a href="/citations">citation</a>}</p>
-
-              </div>
-             
-              <div class="carousel-item pt-4 mt-2">
-           
-                <p class="mb-1 nn-quotes">There is no time for despair, no place for self-pity, no need for silence, no room for fear. We speak, we write, we do language. That is how civilizations heal.</p> 
-                <p class="small mt-3">~ Toni Morrison {<a href="/citations">citation</a>}</p>
-              </div>
-              <div class="carousel-item pt-4 mt-2">
-               
-                <p class="mb-1 nn-quotes">Around us swirls the dust of the cities,<br/>
-                  the garbage clings to us.<br/>
-                  And yet if our Earth needed to <br/>
-                  she could weave us together like roses.</p>
-                <p class="small mt-3">~ Rainer Maria Rilke {<a href="/citations">citation</a>}</p>
-              </div>
-            </div>
-          </div>
+        
+        <div class="project">
+            <h2>Current Work</h2>
+            <p><em>Seven Parties</em> </p>
         </div>
-      </div>
- <div class="col-md-3 offset-md-1 mt-4 mt-sm-0">
-    
-  
-    <h3 class="category-head">Recent Posts</h3>
-    
-     
-      {% for post in site.posts offset:1 limit:3 %}
-
- 
-     <div class="card mb-2 nn-card-list"><div class="nn-post-list-img"><img src="{{ post.image }}" class="img-fluid"/></div><a href="{{ post.url }}" class="stretched-link px-2 small nn-post-link"> {{ post.title }}</a>
-           </div>
-         
-
-
-    {% endfor %}
-    <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" class="d-block text-center small red-bg text-white rounded my-3">
-   View All Posts 
-  </a>
-     </div>
-      </div>
-  
-  
- 
-
-<div class="collapse" id="collapseExample">
-  <div class="row">
-  {% for post in site.posts offset:4 %}
-   <div class="col-md-3">
-     <div class="card mb-2 nn-card-list"><div class="nn-post-list-img"><img src="{{ post.image }}" class="img-fluid"/></div><a href="{{ post.url }}" class="stretched-link px-2 small nn-post-link"> {{ post.title }}</a>
-           </div>
-         </div>
-     {% endfor %}
-   </div>
-</div>
-     
-
-
-
-      
-   </div>
-</div>
-  </div>
-
-<script>
-  $('.carousel').carousel({
-  interval: 4000
-})
-  </script>
- 
-</div>
-  </div>
-</div>
+        
+        <div class="links">
+            <a href="/archive">Archive</a>
+            <a href="mailto:your.email@example.com">Contact</a>
+        </div>
+    </div>
+</body>
+</html>
