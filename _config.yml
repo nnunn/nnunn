@@ -13,3 +13,4 @@ plugins:
   - jekyll-feed
   
 include: ["archive"]
+markdown: kramdown
