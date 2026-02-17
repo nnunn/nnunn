@@ -136,9 +136,7 @@
 
 a {color: var(--brown-light); text-decoration: underline;}
 a:hover {color: var(--brown-mid); text-decoration: none;}
-main {
-  padding-top: 80px;
-}
+
     /* ---- HERO ---- */
     .hero {
       min-height: 100vh;
@@ -667,4 +665,36 @@ main {
   font-weight: 400;
   color: var(--ink);
   margin: 2.5rem 0 1rem;
+}
+.cp-post-header {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 8rem 2rem 3rem;
+}
+
+.cp-eyebrow {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--brown-light);
+  margin-bottom: 1rem;
+}
+
+.cp-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  font-weight: 400;
+  line-height: 1.15;
+  margin-bottom: 1.2rem;
+  color: var(--ink);
+}
+
+.cp-post-date {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--brown-light);
+  margin-bottom: 2rem;
 }
