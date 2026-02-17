@@ -639,12 +639,7 @@ a:hover {color: var(--brown-mid); text-decoration: none;}
 
 .cp-read-more:hover { color: var(--brown-mid); border-color: var(--brown-mid); }
 
-.cp-post-header {
-  max-width: 680px;
-  margin: 0 auto;
-  padding: 8rem 2rem 3rem;
-}
-
+/* Creative Process Post Styling */
 .cp-post-body {
   max-width: 680px;
   margin: 0 auto;
@@ -655,7 +650,14 @@ a:hover {color: var(--brown-mid); text-decoration: none;}
   color: var(--brown-mid);
 }
 
-.cp-post-body p { margin-bottom: 1.5rem; }
+.cp-post-body p { 
+  margin-bottom: 1.5rem; 
+}
+
+.cp-post-body em {
+  font-style: italic;
+  color: var(--rust);
+}
 
 .cp-post-body h2 {
   font-family: 'Playfair Display', serif;
@@ -663,11 +665,4 @@ a:hover {color: var(--brown-mid); text-decoration: none;}
   font-weight: 400;
   color: var(--ink);
   margin: 2.5rem 0 1rem;
-}
-
-.cp-post-footer {
-  max-width: 680px;
-  margin: 0 auto;
-  padding: 2rem 2rem 8rem;
-  border-top: 1px solid var(--line);
 }
