@@ -669,7 +669,7 @@ a:hover {color: var(--brown-mid); text-decoration: none;}
 .cp-post-header {
   max-width: 680px;
   margin: 0 auto;
-  padding: 8rem 2rem 3rem;
+  padding: 8rem 2rem 1rem 3rem;
 }
 
 .cp-eyebrow {
