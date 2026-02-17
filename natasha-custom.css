@@ -75,6 +75,8 @@
 
     .nav-links a:hover { color: var(--rust); }
 
+a {color: var(--brown-light); text-decoration: underline;}
+
     /* ---- HERO ---- */
     .hero {
       min-height: 100vh;
