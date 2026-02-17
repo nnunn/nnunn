@@ -76,6 +76,7 @@
     .nav-links a:hover { color: var(--rust); }
 
 a {color: var(--brown-light); text-decoration: underline;}
+a:hover {color: var(--brown-mid); text-decoration: none;}
 
     /* ---- HERO ---- */
     .hero {
