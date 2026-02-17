@@ -136,7 +136,9 @@
 
 a {color: var(--brown-light); text-decoration: underline;}
 a:hover {color: var(--brown-mid); text-decoration: none;}
-
+main {
+  padding-top: 80px;
+}
     /* ---- HERO ---- */
     .hero {
       min-height: 100vh;
