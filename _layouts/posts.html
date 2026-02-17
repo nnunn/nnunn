@@ -2,30 +2,16 @@
 layout: default
 ---
 
-<div class="container pb-4">
-	<div class="row">
-		<div class="col-md-8 offset-md-2">
-			<h1 class="nn-h1 {{ page.colour }}-top-border d-inline-block mb-4">{{ page.title }}</h1>
-			{% if page.rating != nil %}
-	<p class="mt-n2 text-center">			
-{% for i in (1..page.rating) %}
-   <i class="fa-solid fa-moon h2 red-text"></i>
-{% endfor %}
-			 {% assign nf = 10 | minus: page.rating %}
-			 {% for i in (1..nf) %}
-   <i class="fa-regular fa-moon h2 red-text"></i>
-{% endfor %}	
-<span class="small my-0 nn-date">{{ page.rating }} moons out of 10</span></p>
-				{% endif %}
+<div class="cp-post-header">
+  <p class="cp-eyebrow">Creative Process</p>
+  <h1 class="cp-title">{{ page.title }}</h1>
+  <p class="cp-post-date">{{ page.date | date: "%B %-d, %Y" }}</p>
+</div>
 
-		</div>
-		<div class="col-md-6 offset-md-3">
-			<div class="border border-muted p-4 mb-4 lt-{{ page.colour }}">
-				<p class="small ms-3 my-0 nn-date">{{ page.date  | date: "%B %-d,  %Y" }} filed in <a href="/{{ page.catagory | downcase }}">{{ page.catagory }}</a></p>
-				
-			</div>
-			{{ content }}
-		
-		</div>
-	</div>
+<article class="cp-post-body">
+  {{ content }}
+</article>
+
+<div class="cp-post-footer">
+  <a href="/creative-process" class="cp-read-more">&larr; All posts</a>
 </div>
