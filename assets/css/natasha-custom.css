@@ -509,7 +509,7 @@ a:hover {color: var(--brown-mid); text-decoration: none;}
         gap: 3rem;
       }
 
-      .hero-visual { order: -1; }
+    
       .hero-ornament { width: 280px; height: 340px; }
 
       #about, #book {
